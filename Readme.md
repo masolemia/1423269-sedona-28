@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Maria Soldatenko](https://up.htmlacademy.ru/htmlcss/28/user/1423269).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/id252055).
 
 ---
 
