@@ -30,14 +30,14 @@
       <section>
         <h3>Заинтересовались?</h3>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <p>
-          <button type="button">Поиск гостиницы в Седоне</button>
-          <!-- Здесь будет форма
-          Дата заезда: <time></time><span></span><br>
-          Дата выезда: <time></time><span></span><br>
-          Взрослые: <span> </span> Дети: <span></span><br>
-          <button type="submit">Найти</button>-->
-        </p>
+          <form action="https://echo.htmlacademy.ru" method="GET">
+            <button type="button">Поиск гостиницы в Седоне</button>
+            <label>Дата заезда: <input type="date" name="date-enter" value="24 апреля 2017"></label><br>
+            <label>Дата выезда: <input type="date" name="date-leave" value="4 июля 2017"></label><br>
+            <label>Взрослые: <input type="number" name="adults" value="2" min="0" step="1"></label>
+            <label>Дети: <input type="number" name="children" value="0" min="0" step="1"></label><br>
+            <button type="submit">Найти</button>
+          </form>
         <img src="img/map.png" width="1199" height="594" alt="карта">
       </section>
     </main>

@@ -19,6 +19,52 @@
     <main>
       <h1>Гостиницы</h1>
       <section>
+        <form action="https://echo.htmlacademy.ru" method="POST" oninput="clients_price.value=price.value">
+          <fieldset>
+            <legend>Инфраструктура</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="pool" id="pool" checked>
+                <label for="pool"> Бассейн </label>
+              </li>
+              <li>
+                <input type="checkbox" name="parking" id="parking">
+                <label for="parking">Парковка </label>
+              </li>
+              <li>
+                <input type="checkbox" name="wi-fi" id="wi-fi">
+                <label for="wi-fi">Wi-Fi </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="hotel" id="hotel" checked>
+                <label for="hotel">Гостиница </label>
+              </li>
+              <li>
+                <input type="checkbox" name="motel" id="motel" checked>
+                <label for="motel">Мотель </label>
+              </li>
+              <li>
+                <input type="checkbox" name="apartments" id="apartments" checked>
+                <label for="apartments">Апартаменты </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки (Р):</legend>
+            <p><span>От 0 </span><span>До 3000</span></p>
+            <input type="range" name="price" id="price" min="0" max="3000" step="100">
+            <label for="price">Стоимость в сутки</label><!-- Класс visually-hidden-->
+          </fieldset>
+          <output name="clients_price">1000 </output><!-- Класс visually-hidden-->
+          <button type="submit"> Показать </button>
+        </form>
+      </section>
+      <section>
         <h2>Описание гостиниц</h2>
         <ul>
           <li>
