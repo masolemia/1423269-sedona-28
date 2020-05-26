@@ -9,7 +9,7 @@
       <nav>
         <a> <img src="img/logo.svg" width="138" height="70" alt="Логотип Sedona"> </a>
         <ul>
-          <li><a>Информация</a></li>
+          <li><a href="blank.html">Информация</a></li>
           <li><a href="blank.html">Фото и видео</a></li>
           <li><a href="blank.html">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
@@ -20,7 +20,7 @@
       <div>
         <img src="img/welcome.svg" alt="Добро пожаловать в Седону"> <!--тут будет фон в CSS-->
       </div>
-      <h1> Sedona </h1>
+      <h1>Sedona</h1>
       <section>
         <h2>Седона - небольшой городок в Аризоне,<br>
         заслуживающий большего!
@@ -30,14 +30,14 @@
       <section>
         <h3>Заинтересовались?</h3>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <form action="https://echo.htmlacademy.ru" method="GET">
-            <button type="button">Поиск гостиницы в Седоне</button>
-            <label>Дата заезда: <input type="date" name="date-enter" value="24 апреля 2017"></label><br>
-            <label>Дата выезда: <input type="date" name="date-leave" value="4 июля 2017"></label><br>
-            <label>Взрослые: <input type="number" name="adults" value="2" min="0" step="1"></label>
-            <label>Дети: <input type="number" name="children" value="0" min="0" step="1"></label><br>
-            <button type="submit">Найти</button>
-          </form>
+        <button type="button">Поиск гостиницы в Седоне</button>
+        <form action="https://echo.htmlacademy.ru" method="GET">
+          <label>Дата заезда:<input type="text" name="date-enter" placeholder="24 апреля 2017"><button type="button"><img src="img/calendar.svg" alt="календарь"></button></label>
+          <label>Дата выезда:<input type="text" name="date-leave" placeholder="4 июля 2017"><button type="button"><img src="img/calendar.svg" alt="календарь"></button></label>
+          <label>Взрослые:<button type="button"><img src="img/minus.svg" alt="-"></button><input type="text" name="adults" placeholder="2"><button type="button"><img src="img/plus.svg" alt="+"></button></label>
+          <label>Дети:<button type="button"><img src="img/minus.svg" alt="-"></button><input type="text" name="children" placeholder="0"><button type="button"><img src="img/plus.svg" alt="+"></button></label>
+          <button type="submit">Найти</button>
+        </form>
         <img src="img/map.png" width="1199" height="594" alt="карта">
       </section>
     </main>

@@ -9,7 +9,7 @@
       <nav>
         <a href="index.html"><img src="img/logo.svg" width="138" height="70" alt="Логотип Sedona"></a>
         <ul>
-          <li><a href="index.html">Информация</a></li>
+          <li><a href="blank.html">Информация</a></li>
           <li><a href="blank.html">Фото и видео</a></li>
           <li><a href="blank.html">Карта штата</a></li>
           <li><a>Гостиницы</a></li>
@@ -19,21 +19,21 @@
     <main>
       <h1>Гостиницы</h1>
       <section>
-        <form action="https://echo.htmlacademy.ru" method="POST" oninput="clients_price.value=price.value">
+        <form action="https://echo.htmlacademy.ru" method="GET">
           <fieldset>
             <legend>Инфраструктура</legend>
             <ul>
               <li>
                 <input type="checkbox" name="pool" id="pool" checked>
-                <label for="pool"> Бассейн </label>
+                <label for="pool">Бассейн</label>
               </li>
               <li>
                 <input type="checkbox" name="parking" id="parking">
-                <label for="parking">Парковка </label>
+                <label for="parking">Парковка</label>
               </li>
               <li>
                 <input type="checkbox" name="wi-fi" id="wi-fi">
-                <label for="wi-fi">Wi-Fi </label>
+                <label for="wi-fi">Wi-Fi</label>
               </li>
             </ul>
           </fieldset>
@@ -42,25 +42,24 @@
             <ul>
               <li>
                 <input type="checkbox" name="hotel" id="hotel" checked>
-                <label for="hotel">Гостиница </label>
+                <label for="hotel">Гостиница</label>
               </li>
               <li>
                 <input type="checkbox" name="motel" id="motel" checked>
-                <label for="motel">Мотель </label>
+                <label for="motel">Мотель</label>
               </li>
               <li>
                 <input type="checkbox" name="apartments" id="apartments" checked>
-                <label for="apartments">Апартаменты </label>
+                <label for="apartments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
           <fieldset>
             <legend>Стоимость в сутки (Р):</legend>
-            <p><span>От 0 </span><span>До 3000</span></p>
-            <input type="range" name="price" id="price" min="0" max="3000" step="100">
-            <label for="price" class="visually-hidden">Стоимость в сутки</label>
+            <label>От<input type="text" name="price_from" id="price_from" value="0"> </label>
+            <label>До<input type="text" name="price_up" id="price_up" value="3000"> </label>
+            <div><button type="button"><img src="img/filter-button.svg"></button> <button type="button"><img src="img/filter-button.svg"></button></div>
           </fieldset>
-          <output name="clients_price" class="visually-hidden">1000 </output>
           <button type="submit"> Показать </button>
         </form>
       </section>
