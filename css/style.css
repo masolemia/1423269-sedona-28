@@ -45,8 +45,17 @@ img{
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
+
 .navigation-list, .hotels-list, .reasons-list, .extras-list, .points-list{
   list-style:none;
+}
+
+.navigation-list li:hover{
+  color:var(--basic-light-blue);
+}
+
+.navigation-list li:active{
+  opacity:0.3;
 }
 
 .main{
@@ -66,6 +75,14 @@ img{
 .hotel-description{
   line-height: 21px;
   color: var(--basic-light-black);
+}
+
+.hotel-name:hover{
+  color: var(--basic-light-blue);
+}
+
+.hotel-name:active{
+  opacity: 0.3;
 }
 
 .interested{
@@ -103,17 +120,35 @@ h3.interested{
   background-color: var(--basic-light-blue);
 }
 
-.button-book{
-  line-height: 21px;
-  background-color: var(--basic-light-brown);
-}
-
 .icon{
   width: 46px;
   height: 48px;
   background-color: var(--basic-light-blue);
   position: center;
   padding: 17px;
+}
+
+.button-more:hover, .button-search:hover, .icon:hover{
+  background-color: var(--basic-blue);
+}
+
+.button-more:active, .button-search:active, .icon:active{
+  background-color: var(--basic-dark-blue);
+  opacity: 0.3;
+}
+
+.button-book{
+  line-height: 21px;
+  background-color: var(--basic-light-brown);
+}
+
+.button-book:hover, .button-search:hover{
+  background-color: var(--basic-brown);
+}
+
+.button-book:active, .button-search:active{
+  background-color: var(--basic-dark-brown);
+  opacity:0.3;
 }
 
 .footer{
