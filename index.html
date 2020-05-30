@@ -2,13 +2,16 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
     <header>
       <nav>
         <a> <img src="img/logo.svg" width="138" height="70" alt="Логотип Sedona"> </a>
-        <ul>
+        <ul class="navigation-list">
           <li><a href="blank.html">Информация</a></li>
           <li><a href="blank.html">Фото и видео</a></li>
           <li><a href="blank.html">Карта штата</a></li>
@@ -17,23 +20,23 @@
       </nav>
     </header>
     <main>
-      <div>
-        <img src="img/welcome.svg" alt="Добро пожаловать в Седону"> <!--тут будет фон в CSS-->
+      <div class="main">
+        <img src="img/welcome.svg" alt="Добро пожаловать в Седону">
       </div>
-      <h1>Sedona</h1>
+      <h1 class="visually-hidden">Sedona</h1>
       <section>
-        <h2>Седона - небольшой городок в Аризоне,<br>
+        <h2 class="subtitle">Седона - небольшой городок в Аризоне,<br>
         заслуживающий большего!
         </h2>
-        <p>Рассмотрим 5 причин, по которым Седона лучше, чем Гранд Каньон!</p>
+        <p class="text">Рассмотрим 5 причин, по которым Седона лучше, чем Гранд Каньон!</p>
       </section>
       <section>
-        <ol>
+        <ol class="reasons-list">
           <li><h3>Настоящий <br> городок</h3>
             <span>-№1-</span>
             <p>Седона - не аттракцион для туристов, там <br> течет своя жизнь</p>
             <img src="img/1-real-city.jpg" alt="Фото города" width="800" height="256">
-            <ul>
+            <ul class="extras-list">
               <li>
                 <h3>Жильё</h3>
                 <p>Рекомендуем пожить в настоящем <br>мотеле, всё как в кино!</p>
@@ -71,43 +74,43 @@
         </ol>
       </section>
       <section>
-        <h3>Заинтересовались?</h3>
-        <p>Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button type="button">Поиск гостиницы в Седоне</button>
+        <h3 class="interested">Заинтересовались?</h3>
+        <p class="interested">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button type="button" class="button button-subtitle">Поиск гостиницы в Седоне</button>
         <form action="https://echo.htmlacademy.ru" method="GET">
           <p>
-            <label>Дата заезда:<input type="text" name="date-enter" placeholder="24 апреля 2017"></label>
+            <label class="form">Дата заезда:<input type="text" name="date-enter" placeholder="24 апреля 2017"></label>
             <button type="button"><img src="img/calendar.svg" alt="календарь"></button>
           </p>
           <p>
-            <label>Дата выезда:<input type="text" name="date-leave" placeholder="4 июля 2017"></label>
+            <label class="form">Дата выезда:<input type="text" name="date-leave" placeholder="4 июля 2017"></label>
             <button type="button"><img src="img/calendar.svg" alt="календарь"></button>
           </p>
           <p>
             <button type="button"><img src="img/minus.svg" alt="-"></button>
-            <label>Взрослые:<input type="text" name="adults" placeholder="2"></label>
+            <label class="form">Взрослые:<input type="text" name="adults" placeholder="2"></label>
             <button type="button"><img src="img/plus.svg" alt="+"></button>
           </p>
           <p>
             <button type="button"><img src="img/minus.svg" alt="-"></button>
-            <label>Дети:<input type="text" name="children" placeholder="0"></label>
+            <label class="form">Дети:<input type="text" name="children" placeholder="0"></label>
             <button type="button"><img src="img/plus.svg" alt="+"></button>
           </p>
-          <button type="submit">Найти</button>
+          <button type="submit" class="button button-search">Найти</button>
         </form>
         <img src="img/map.png" width="1199" height="594" alt="карта">
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <section>
-        <h3>#VISITSEDONA</h3>
-        <a href="tel:+74956660166">тел: +7(495)666-01-66</a>
+        <h3 class="hashtag">#VISITSEDONA</h3>
+        <a href="tel:+74956660166"class="phone">тел: +7(495)666-01-66</a>
       </section>
       <section>
         <h3 class="visually-hidden">Contact us</h3>
-        <a href=""><img src="img/twitter.svg" width="17" height="17" alt="twitter"></a>
-        <a href=""><img src="img/fb-icon.svg" width="12" height="22" alt=" facebook"></a>
-        <a href=""><img src="img/youtube.svg" width="20" height="16" alt="youtube"> </a>
+        <a href="" class="icon"><img src="img/twitter.svg" width="17" height="17" alt="twitter"></a>
+        <a href=""class="icon"><img src="img/fb-icon.svg" width="12" height="22" alt=" facebook"></a>
+        <a href="" class="icon"><img src="img/youtube.svg" width="20" height="16" alt="youtube"> </a>
       </section>
       <p>
         Website by

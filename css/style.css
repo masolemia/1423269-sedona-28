@@ -1,0 +1,121 @@
+:root{
+  --basic-light-black:#333333;
+  --basic-black:#000000;
+  --basic-white:#ffffff;
+  --basic-dark-white: #f2f2f2;
+  --basic-grey:#eeeeee;
+  --basic-dark-grey:#6a6a6a;
+  --basic-light-blue:#81B3D2;
+  --basic-blue:#669ec0;
+  --basic-dark-blue: #5496bd;
+  --basic-light-brown: #766367;
+  --basic-brown: #604E43;
+  --basic-dark-brown:  #503E33;
+  --basic-light-grey:#666666;
+}
+
+body{
+  width: 1200px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "PT Sans", "PT Serif", sans-serif;
+  line-height: 26px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: var(--basic-black)
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden{
+  font-size: 0;
+}
+
+.navigation-list{
+  font-weight: 700;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+.navigation-list, .hotels-list, .reasons-list, .extras-list, .points-list{
+  list-style:none;
+}
+
+.main{
+  background-image:
+    url("C:/Users/maria/OneDrive/Документы/GitHub/1423269-sedona-28/img/background-main.jpg");
+  background-repeat: no-repeat;
+}
+.subtitle, .hashtag, .phone, .hotel-name{
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.text{
+  color: var(--basic-light-black);
+}
+
+.hotel-description{
+  line-height: 21px;
+  color: var(--basic-light-black);
+}
+
+.interested{
+  line-height: 24px;
+}
+
+h3.interested{
+  font-size: 30px;
+}
+
+.rating{
+  background-color: var(--basic-dark-white);
+  color:var(--basic-light-grey);
+}
+.form{
+  font-weight: 700;
+}
+.button{
+  color: var(--basic-white);
+  font-weight: 700;
+}
+
+.button-subtitle{
+  background-color: var(--basic-light-brown);
+  font-size:21px;
+}
+
+.button-search{
+  background-color: var(--basic-light-blue);
+  font-size:21px;
+}
+
+.button-more{
+  line-height: 21px;
+  background-color: var(--basic-light-blue);
+}
+
+.button-book{
+  line-height: 21px;
+  background-color: var(--basic-light-brown);
+}
+
+.icon{
+  width: 46px;
+  height: 48px;
+  background-color: var(--basic-light-blue);
+  position: center;
+  padding: 17px;
+}
+
+.footer{
+  background-color: rgba(255, 255, 255, 0.9);;
+}
