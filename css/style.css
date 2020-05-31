@@ -16,16 +16,16 @@
 }
 
 body{
-  min-width: 1280px;
+  min-width: 1200px;
   padding-left: 40px;
   padding-right: 40px;
   font-size: 14px;
   font-weight: 400;
   font-family: "PT Sans", "Arial", sans-serif;
-  line-height: 26px;
+  line-height: 21px;
   color: var(--basic-black);
   text-transform: uppercase;
-  background-color: var(--basic-white);
+  background-color: var(--basic-background-grey);
 }
 
 a{
@@ -53,6 +53,7 @@ img{
   font-weight: 700;
   color: var(--basic-black);
   background-color: var(--basic-white);
+  line-height: 26px;
 }
 
 .navigation-list, .hotels-list, .reasons-list, .extras-list, .points-list{
@@ -80,11 +81,14 @@ img{
   url("../img/shape-main.png"),
   url("../img/background-main.jpg");
   background-repeat: no-repeat;
-  background-position: absolute;
 }
 
+.subtitle-section{
+  background-color: var(--basic-white);
+}
 .subtitle{
   font-size: 21px;
+  line-height: 26px;
   font-weight: 700;
   text-align: center;
 }
@@ -92,33 +96,56 @@ img{
 .text{
   color: var(--basic-light-black);
   text-align: center;
+  line-height: 26px;
+}
+
+.sort{
+  background-color: var(--basic-white);
+}
+legend.sort{
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .hotel-description{
-  line-height: 21px;
   color: var(--basic-light-black);
 }
 
-.hotel-name:hover{
+.hotel-name{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.hotel-name a:hover{
   color: var(--basic-light-blue);
 }
 
-.hotel-name:active{
-  opacity: 0.3;
+.hotel-name a:active{
+  color: rgba(0, 0,0,0.3);
 }
 
+.hotels-list{
+  background-color: var(--basic-white);
+}
 .interested{
   line-height: 24px;
   text-align: center;
+  background-color: var(--basic-white);
 }
 
-h3.interested{
+.interested h3{
   font-size: 30px;
 }
 
 .rating{
   background-color: var(--basic-dark-white);
   color:var(--basic-light-grey);
+}
+
+.search-form{
+  background-color: var(--basic-white);
+  width: 568px;
 }
 .form{
   font-weight: 700;
@@ -132,15 +159,16 @@ h3.interested{
 .button-subtitle{
   background-color: var(--basic-light-brown);
   font-size:21px;
+  line-height: 26px;
 }
 
 .button-search{
   background-color: var(--basic-light-blue);
   font-size:21px;
+  line-height: 26px;
 }
 
 .button-more{
-  line-height: 21px;
   background-color: var(--basic-light-blue);
 }
 
@@ -162,7 +190,6 @@ h3.interested{
 }
 
 .button-book{
-  line-height: 21px;
   background-color: var(--basic-light-brown);
 }
 
@@ -191,12 +218,15 @@ h3.interested{
   width: 115px;
   height: 41px;
   background-image: url("../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
 }
 
 .logo:hover{
   background-image: url("../img/logo-htmlacademy-hover.svg");
+  background-repeat: no-repeat;
 }
 
 .logo:active{
   background-image: url("../img/logo-htmlacademy-active.svg");
+  background-repeat: no-repeat;
 }
