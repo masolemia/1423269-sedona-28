@@ -12,18 +12,20 @@
   --basic-brown: #604E43;
   --basic-dark-brown:  #503E33;
   --basic-light-grey:#666666;
+  --basic-background-grey: #888888;
 }
 
 body{
-  width: 1200px;
+  min-width: 1280px;
+  padding-left: 40px;
+  padding-right: 40px;
   font-size: 14px;
   font-weight: 400;
-  font-family: "PT Sans", "PT Serif", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   line-height: 26px;
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-white);
-  text-align: center;
 }
 
 a{
@@ -36,8 +38,15 @@ img{
   height: auto;
 }
 
-.visually-hidden{
-  font-size: 0;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .navigation-list{
@@ -50,26 +59,39 @@ img{
   list-style:none;
 }
 
-.navigation-list li:hover{
+.navigation-list a:hover{
   color:var(--basic-light-blue);
 }
 
-.navigation-list li:active{
-  opacity:0.3;
+.navigation-list a:active{
+  color: rgba(0, 0,0,0.3);
+}
+
+.navigation-list li:first-child, .navigation-list li:nth-child(2){
+  text-align: left;
+}
+
+.navigation-list li:nth-child(3), .navigation-list li:last-child{
+  text-align: right;
 }
 
 .main{
   background-image:
-    url("C:/Users/maria/OneDrive/Документы/GitHub/1423269-sedona-28/img/background-main.jpg");
+  url("../img/shape-main.png"),
+  url("../img/background-main.jpg");
   background-repeat: no-repeat;
+  background-position: absolute;
 }
-.subtitle, .hashtag, .phone, .hotel-name{
+
+.subtitle{
   font-size: 21px;
   font-weight: 700;
+  text-align: center;
 }
 
 .text{
   color: var(--basic-light-black);
+  text-align: center;
 }
 
 .hotel-description{
@@ -87,6 +109,7 @@ img{
 
 .interested{
   line-height: 24px;
+  text-align: center;
 }
 
 h3.interested{
@@ -99,6 +122,7 @@ h3.interested{
 }
 .form{
   font-weight: 700;
+  line-height: 26px;
 }
 .button{
   color: var(--basic-white);
@@ -132,9 +156,9 @@ h3.interested{
   background-color: var(--basic-blue);
 }
 
-.button-more:active, .button-search:active, .icon:active{
+.button-more:active, .button-search:active{
   background-color: var(--basic-dark-blue);
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-book{
@@ -142,15 +166,37 @@ h3.interested{
   background-color: var(--basic-light-brown);
 }
 
-.button-book:hover, .button-search:hover{
+.button-book:hover, .button-subtitle:hover{
   background-color: var(--basic-brown);
 }
 
-.button-book:active, .button-search:active{
+.button-book:active, .button-subtitle:active{
   background-color: var(--basic-dark-brown);
-  opacity:0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
+.icon:active img{
+  background-color: var(--basic-dark-blue);
+  opacity: 0.3;
+}
 .footer{
-  background-color: rgba(255, 255, 255, 0.9);;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.logo{
+  width: 115px;
+  height: 41px;
+  background-image: url("../img/logo-htmlacademy.svg");
+}
+
+.logo:hover{
+  background-image: url("../img/logo-htmlacademy-hover.svg");
+}
+
+.logo:active{
+  background-image: url("../img/logo-htmlacademy-active.svg");
 }
