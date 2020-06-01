@@ -12,20 +12,17 @@
   --basic-brown: #604E43;
   --basic-dark-brown:  #503E33;
   --basic-light-grey:#666666;
-  --basic-background-grey: #888888;
 }
 
 body{
   min-width: 1200px;
-  padding-left: 40px;
-  padding-right: 40px;
   font-size: 14px;
   font-weight: 400;
   font-family: "PT Sans", "Arial", sans-serif;
   line-height: 21px;
   color: var(--basic-black);
   text-transform: uppercase;
-  background-color: var(--basic-background-grey);
+  background-color: var(--basic-dark-white);
 }
 
 a{
@@ -176,7 +173,6 @@ legend.sort{
   width: 46px;
   height: 48px;
   background-color: var(--basic-light-blue);
-  position: center;
   padding: 17px;
 }
 
@@ -203,7 +199,6 @@ legend.sort{
 }
 
 .icon:active img{
-  background-color: var(--basic-dark-blue);
   opacity: 0.3;
 }
 .footer{
@@ -214,19 +209,4 @@ legend.sort{
   text-align: center;
 }
 
-.logo{
-  width: 115px;
-  height: 41px;
-  background-image: url("../img/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
-}
 
-.logo:hover{
-  background-image: url("../img/logo-htmlacademy-hover.svg");
-  background-repeat: no-repeat;
-}
-
-.logo:active{
-  background-image: url("../img/logo-htmlacademy-active.svg");
-  background-repeat: no-repeat;
-}
