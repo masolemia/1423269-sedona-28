@@ -46,6 +46,7 @@ img{
   overflow: hidden;
 }
 
+/*index*/
 .navigation-list{
   font-weight: 700;
   color: var(--basic-black);
@@ -83,6 +84,7 @@ img{
 .subtitle-section{
   background-color: var(--basic-white);
 }
+
 .subtitle{
   font-size: 21px;
   line-height: 26px;
@@ -96,35 +98,35 @@ img{
   line-height: 26px;
 }
 
-.sort{
-  background-color: var(--basic-white);
-}
-legend.sort{
-  font-size: 12px;
-  line-height: 18px;
+.reason{
+  background-color: var(--basic-light-blue);
+  color: var(--basic-white);
+  text-align: center;
 }
 
-.hotel-description{
-  color: var(--basic-light-black);
-}
-
-.hotel-name{
+.reason h3{
   font-size: 21px;
-  line-height: 26px;
   font-weight: 700;
 }
 
-.hotel-name a:hover{
-  color: var(--basic-light-blue);
-}
-
-.hotel-name a:active{
-  color: rgba(0, 0,0,0.3);
-}
-
-.hotels-list{
+.extras-list li{
   background-color: var(--basic-white);
+  color: var(--basic-light-black);
+  text-align: center;
 }
+
+.extras-list h3, .another-reason h3{
+  color: var(--basic-black);
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.another-reason{
+  background-color: var(--basic-grey);
+  color: var(--basic-light-black);
+  text-align: center;
+}
+
 .interested{
   line-height: 24px;
   text-align: center;
@@ -133,11 +135,6 @@ legend.sort{
 
 .interested h3{
   font-size: 30px;
-}
-
-.rating{
-  background-color: var(--basic-dark-white);
-  color:var(--basic-light-grey);
 }
 
 .search-form{
@@ -165,15 +162,72 @@ legend.sort{
   line-height: 26px;
 }
 
-.button-more{
-  background-color: var(--basic-light-blue);
+/*hotels*/
+.search-filters{
+  background-color: var(--basic-dark-blue);
+  background-image: url("../img/background-hotels.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--basic-white)
 }
 
-.icon{
-  width: 46px;
-  height: 48px;
+.search-filters legend{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.search-filters input, .show-button{
+  background-color: transparent;
+  color: var(--basic-white);
+  text-transform: inherit;
+}
+
+.sort{
+  background-color: var(--basic-white);
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort input{
+  text-transform: inherit;
+  background-color: transparent;
+  color: var(--basic-black);
+  border-bottom:  1px dashed #81B3D2; ;
+}
+
+.sort input:focus{
+  color: var(--basic-light-blue);
+}
+
+.hotels-list{
+  background-color: var(--basic-white);
+}
+
+.hotel-name{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.hotel-name a:hover{
+  color: var(--basic-light-blue);
+}
+
+.hotel-name a:active{
+  color: rgba(0, 0,0,0.3);
+}
+
+.hotel-description{
+  color: var(--basic-light-black);
+}
+
+.rating{
+  background-color: var(--basic-dark-white);
+  color:var(--basic-light-grey);
+}
+
+.button-more{
   background-color: var(--basic-light-blue);
-  padding: 17px;
 }
 
 .button-more:hover, .button-search:hover, .icon:hover{
@@ -198,9 +252,7 @@ legend.sort{
   color: rgba(255, 255, 255, 0.3);
 }
 
-.icon:active img{
-  opacity: 0.3;
-}
+/*footer*/
 .footer{
   background-color: rgba(255, 255, 255, 0.9);
   font-size: 21px;
@@ -209,4 +261,14 @@ legend.sort{
   text-align: center;
 }
 
+.icon{
+  width: 46px;
+  height: 48px;
+  background-color: var(--basic-light-blue);
+  padding: 17px;
+}
+
+.icon:active img{
+  opacity: 0.3;
+}
 
