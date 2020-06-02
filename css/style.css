@@ -180,6 +180,7 @@ img{
   background-color: transparent;
   color: var(--basic-white);
   text-transform: inherit;
+  line-height: inherit;
 }
 
 .sort{
@@ -188,15 +189,29 @@ img{
   line-height: 18px;
 }
 
-.sort input{
-  text-transform: inherit;
+.types-chosen a{
   background-color: transparent;
-  color: var(--basic-black);
+  color: rgba(0, 0,0,0.3);
   border-bottom:  1px dashed #81B3D2; ;
 }
 
-.sort input:focus{
+a.active-type{
   color: var(--basic-light-blue);
+  border-bottom: none;
+}
+
+.up{
+  width: 11px;
+  height: 10px;
+  background-image: url("../img/icon-up-dir.svg");
+  background-repeat: no-repeat;
+}
+
+.down{
+  width: 11px;
+  height: 10px;
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
 }
 
 .hotels-list{
