@@ -23,48 +23,50 @@
     <main>
       <h1 class="visually-hidden">Гостиницы</h1>
       <section class="search-filters">
-        <form action="https://echo.htmlacademy.ru" method="GET">
-          <fieldset>
-            <legend>Инфраструктура</legend>
-            <ul class="points-list">
-              <li>
-                <input type="checkbox" name="pool" id="pool" checked>
-                <label for="pool">Бассейн</label>
-              </li>
-              <li>
-                <input type="checkbox" name="parking" id="parking">
-                <label for="parking">Парковка</label>
-              </li>
-              <li>
-                <input type="checkbox" name="wi-fi" id="wi-fi">
-                <label for="wi-fi">Wi-Fi</label>
-              </li>
-            </ul>
+        <form action="https://echo.htmlacademy.ru" method="GET" class="choose-hotel-form">
+          <fieldset class="infrastructure">
+              <legend>Инфраструктура</legend>
+              <ul class="points-list">
+                <li>
+                  <input type="checkbox" name="pool" id="pool" checked>
+                  <label for="pool">Бассейн</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="parking" id="parking">
+                  <label for="parking">Парковка</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="wi-fi" id="wi-fi">
+                  <label for="wi-fi">Wi-Fi</label>
+                </li>
+              </ul>
           </fieldset>
-          <fieldset>
-            <legend>Тип жилья</legend>
-            <ul class="points-list">
-              <li>
-                <input type="checkbox" name="hotel" id="hotel" checked>
-                <label for="hotel">Гостиница</label>
-              </li>
-              <li>
-                <input type="checkbox" name="motel" id="motel" checked>
-                <label for="motel">Мотель</label>
-              </li>
-              <li>
-                <input type="checkbox" name="apartments" id="apartments" checked>
-                <label for="apartments">Апартаменты</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Стоимость в сутки (Р):</legend>
-            <label>От<input type="text" name="price_from" id="price_from" value="0"> </label>
-            <label>До<input type="text" name="price_up" id="price_up" value="3000"> </label>
-            <div><button type="button"></button> <button type="button"></button></div>
-          </fieldset>
-          <button type="submit" class="show-button"> Показать </button>
+          <fieldset class="hotel-type">
+              <legend>Тип жилья</legend>
+              <ul class="points-list">
+                <li>
+                  <input type="checkbox" name="hotel" id="hotel" checked>
+                  <label for="hotel">Гостиница</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="motel" id="motel" checked>
+                  <label for="motel">Мотель</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="apartments" id="apartments" checked>
+                  <label for="apartments">Апартаменты</label>
+                </li>
+              </ul>
+            </fieldset>
+          <div class="price-section">
+            <fieldset class="prices">
+              <legend>Стоимость в сутки (Р):</legend>
+              <label>От<input type="text" name="price_from" id="price_from" value="0"> </label>
+              <label>До<input type="text" name="price_up" id="price_up" value="3000"> </label>
+              <div><button type="button"></button> <button type="button"></button></div>
+            </fieldset>
+            <button type="submit" class="show-button"> Показать </button>
+          </div>
         </form>
       </section>
       <section  class="sort">

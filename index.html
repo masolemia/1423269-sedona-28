@@ -33,12 +33,12 @@
       </section>
       <section>
         <ol class="reasons-list">
-          <div class="reason">
+          <div class="reason first-reason">
             <li><h3>Настоящий <br> городок</h3>
             <span>-№1-</span>
             <p>Седона - не аттракцион для туристов, там <br> течет своя жизнь</p>
           </div>
-            <img src="img/1-real-city.jpg" alt="Фото города" width="800" height="256">
+            <img src="img/1-real-city.jpg" alt="Фото города" width="800" height="256" class="first-reason-img">
             <ul class="extras-list">
               <li>
                 <h3>Жильё</h3>
@@ -54,12 +54,12 @@
               </li>
             </ul>
           </li>
-          <div class="reason">
+          <div class="reason second-reason">
             <li><h3>Там есть <br> мост Дьявола</h3>
             <span>-№2-</span>
             <p>Да, по нему можно пройти! Если, конечно, <br> вы осмелитесь</p>
           </div>
-            <img src="img/2-devils-bridge.jpg" alt="мост Дьявола" width="800" height="256">
+            <img src="img/2-devils-bridge.jpg" alt="мост Дьявола" width="800" height="256" class="second-reason-img">
           </li>
           <div class="another-reason">
             <li>
@@ -89,28 +89,44 @@
           <h3>Заинтересовались?</h3>
           <p>Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         </div>
-        <button type="button" class="button button-subtitle">Поиск гостиницы в Седоне</button>
-        <form action="https://echo.htmlacademy.ru" method="GET" class="search-form">
-          <p>
-            <label class="form">Дата заезда:<input type="text" name="date-enter" placeholder="24 апреля 2017"></label>
-            <button type="button"><img src="img/calendar.svg" alt="календарь"></button>
-          </p>
-          <p>
-            <label class="form">Дата выезда:<input type="text" name="date-leave" placeholder="4 июля 2017"></label>
-            <button type="button"><img src="img/calendar.svg" alt="календарь"></button>
-          </p>
-          <p>
-            <button type="button"><img src="img/minus.svg" alt="-"></button>
-            <label class="form">Взрослые:<input type="text" name="adults" placeholder="2"></label>
-            <button type="button"><img src="img/plus.svg" alt="+"></button>
-          </p>
-          <p>
-            <button type="button"><img src="img/minus.svg" alt="-"></button>
-            <label class="form">Дети:<input type="text" name="children" placeholder="0"></label>
-            <button type="button"><img src="img/plus.svg" alt="+"></button>
-          </p>
-          <button type="submit" class="button button-search">Найти</button>
-        </form>
+        <div class="main-form">
+          <button type="button" class="button button-subtitle">Поиск гостиницы в Седоне</button>
+          <form action="https://echo.htmlacademy.ru" method="GET" class="search-form">
+            <p class="date-form">
+              <label class="form" for="date-enter">Дата заезда:</label>
+              <div class="date">
+                <input type="text" name="date-enter" placeholder="24 апреля 2017" id="date-enter">
+                <button type="button"><img src="img/calendar.svg" alt="календарь"></button>
+              </div>
+            </p>
+            <p class="date-form">
+              <label class="form" for="date-leave">Дата выезда:</label>
+              <div class="date">
+                <input type="text" name="date-leave" placeholder="4 июля 2017" id="date-leave">
+                <button type="button"><img src="img/calendar.svg" alt="календарь"></button>
+              </div>
+            </p>
+            <div class="guests">
+              <p>
+                <label class="form" for="adults">Взрослые:</label>
+                <div class="guests-number">
+                  <button type="button"><img src="img/minus.svg" alt="-"></button>
+                  <input type="text" name="adults" placeholder="2" id="adults">
+                  <button type="button"><img src="img/plus.svg" alt="+"></button>
+                </div>
+              </p>
+              <p>
+                <label class="form" for="children">Дети:</label>
+                <div class="guests-number">
+                  <button type="button"><img src="img/minus.svg" alt="-"></button>
+                  <input type="text" name="children" placeholder="0" id="children">
+                  <button type="button"><img src="img/plus.svg" alt="+"></button>
+                </div>
+              </p>
+            </div>
+            <button type="submit" class="button button-search">Найти</button>
+          </form>
+        </div>
         <img src="img/map.png" width="1199" height="594" alt="карта">
       </section>
     </main>
