@@ -151,8 +151,8 @@ img{
   background-color: var(--basic-light-blue);
   color: var(--basic-white);
   text-align: center;
-  padding-right: 51px;
-  padding-left: 51px;
+  width: 400px;
+  padding-top: 47px;
 }
 
 .reason h3{
@@ -166,8 +166,8 @@ img{
 }
 
 .reason-group{
-  width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .extras-list li{
@@ -176,6 +176,7 @@ img{
   text-align: center;
   padding-top: 82px;
   padding-bottom: 82px;
+  width: 400px;
 }
 
 .extras-list h3, .another-reason h3{
@@ -186,14 +187,12 @@ img{
 
 .extras-list{
   display: flex;
-  justify-content: space-around;
 }
 
 .reasons-list li:nth-child(2){
   grid-row: 3/4;
   grid-column: 1/-1;
 }
-
 .second-reason-img{
   order: -1;
 }
@@ -332,7 +331,7 @@ img{
   margin-left: 72px;
 }
 
-.price-section{
+.prices{
   margin-left: auto;
 }
 
