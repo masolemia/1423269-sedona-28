@@ -341,6 +341,15 @@ img{
   font-size: 12px;
   line-height: 18px;
   padding-top: 42px;
+  display: flex;
+  align-items: baseline;
+}
+
+.search-results{
+  text-align: left;
+  margin-left: 72px;
+  margin-top: 29px;
+  margin-right: 46px;
 }
 
 .types-chosen a{
@@ -352,8 +361,14 @@ img{
 a.active-type{
   color: var(--basic-light-blue);
   border-bottom: none;
+  margin-left: 40px;
+  margin-right: 32px;
 }
 
+.types-chosen a:last-child{
+  margin-left: 32px;
+  margin-right: 503px;
+}
 .up{
   width: 11px;
   height: 10px;
