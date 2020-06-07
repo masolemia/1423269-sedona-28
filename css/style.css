@@ -119,6 +119,7 @@ img{
 .subtitle-section{
   background-color: var(--basic-white);
   min-height: 216px;
+  padding-top: 42px;
 }
 
 .subtitle{
@@ -144,13 +145,14 @@ img{
 .reasons-list{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 256px 330px 256px 256px;
 }
 
 .reason{
   background-color: var(--basic-light-blue);
   color: var(--basic-white);
   text-align: center;
+  padding-right: 51px;
+  padding-left: 51px;
 }
 
 .reason h3{
@@ -158,20 +160,21 @@ img{
   font-weight: 700;
 }
 
-.first-reason{
-  grid-row: 1/2;
-  grid-column: 1/2;
+.reasons-list li:first-child{
+  grid-row: 1/3;
+  grid-column: 1/-1;
 }
 
-.first-reason-img{
-  grid-row: 1/2;
-  grid-column: 2/4;
+.reason-group{
+  width: 100%;
+  display: flex;
 }
-
 .extras-list li{
   background-color: var(--basic-white);
   color: var(--basic-light-black);
   text-align: center;
+  padding-top: 82px;
+  padding-bottom: 82px;
 }
 
 .extras-list h3, .another-reason h3{
@@ -181,35 +184,37 @@ img{
 }
 
 .extras-list{
-  grid-row: 2/3;
-  grid-column: 1/4;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
+}
+
+.reasons-list li:nth-child(2){
+  grid-row: 3/4;
+  grid-column: 1/-1;
 }
 
 .second-reason-img{
-  grid-row: 3/4;
-  grid-column: 1/3;
-}
-.second-reason{
-  grid-row: 3/4;
-  grid-column: 3/4;
+  order: -1;
 }
 
 .another-reason{
   background-color: var(--basic-grey);
   color: var(--basic-light-black);
   text-align: center;
+  padding-top: 47px;
+  padding-bottom: 54px;
 }
 
 .interested{
   line-height: 24px;
   text-align: center;
   background-color: var(--basic-white);
+  padding-top: 58px;
 }
 
 .interested h3{
   font-size: 30px;
+  margin-top: 0;
 }
 
 .main-form{
@@ -303,6 +308,7 @@ img{
   background-repeat: no-repeat;
   color: var(--basic-white);
   min-height: 217px;
+  padding-top: 27px;
 }
 
 .search-filters legend{
@@ -318,14 +324,22 @@ img{
 }
 
 .choose-hotel-form{
-  display: grid;
-  grid-template-columns: 340px 500px 400px;
+  display: flex;
+}
+
+.infrastructure{
+  margin-left: 72px;
+}
+
+.price-section{
+  margin-left: auto;
 }
 
 .sort{
   background-color: var(--basic-white);
   font-size: 12px;
   line-height: 18px;
+  padding-top: 42px;
 }
 
 .types-chosen a{
