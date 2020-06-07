@@ -169,6 +169,7 @@ img{
   width: 100%;
   display: flex;
 }
+
 .extras-list li{
   background-color: var(--basic-white);
   color: var(--basic-light-black);
@@ -375,15 +376,18 @@ a.active-type{
   display: flex;
   align-items: center;
   min-height: 150px;
-  }
+}
+
+.hotel-about{
+  margin-left: 29px;
+}
 
 .hotel-name{
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   margin: 0;
-  margin-left: 29px;
-  }
+}
 
 .hotel-name a:hover{
   color: var(--basic-light-blue);
@@ -394,6 +398,7 @@ a.active-type{
 }
 
 .hotel-photo{
+  margin-left: 73px;
   width: 135px;
   height: 90px;
   order: -1;
