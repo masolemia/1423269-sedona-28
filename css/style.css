@@ -79,8 +79,9 @@ img{
   width: 138px;
   height: 70px;
   position: absolute;
-  left: 531px;
+  left: 50%;
   top: 0px;
+  margin-left: -69px;
 }
 
 .navigation-list, .hotels-list, .reasons-list, .extras-list, .points-list{
@@ -107,29 +108,24 @@ img{
   color: var(--basic-light-brown);
 }
 
-.navigation-item-left{
-  text-align: left;
+.navigation-list li{
+  box-sizing: border-box;
+  width: 240px;
 }
 
-.first-navigation-item{
+.navigation-list li:first-child{
   margin-left: 72px;
-}
-
-.second-navigation-item{
-  margin-left: 133px;
-  margin-right: 133px;
 }
 
 .navigation-item-right{
   text-align: right;
 }
 
-.third-navigation-item{
-  margin-left: 285px;
-  margin-right: 147px;
+.navigation-list li:nth-child(3){
+  margin-left: auto;
 }
 
-.last-navigation-item{
+.navigation-list li:last-child{
   margin-right: 72px;
 }
 
@@ -153,6 +149,7 @@ img{
 }
 
 .subtitle{
+  width: 470px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -161,6 +158,15 @@ img{
   margin-right: auto;
   margin-bottom: 16px;
   margin-left: auto;
+}
+
+.blank{
+  width: 100%;
+  font-size: 21px;
+  background-color: var(--basic-white);
+  margin:0;
+  padding-top: 10px;
+  text-align: center;
 }
 
 .text{
@@ -257,7 +263,8 @@ img{
   height: 481px;
   position: absolute;
   top: 205px;
-  left: 316px;
+  left: 50%;
+  margin-left: -284px;
 }
 
 .button-subtitle{
@@ -354,7 +361,6 @@ img{
   background-color: var(--basic-dark-white);
 }
 
-
 .guests-number input{
   width: 36px;
   background-color: inherit;
@@ -410,16 +416,19 @@ img{
   background-color: var(--basic-white);
   font-size: 12px;
   line-height: 18px;
-  padding-top: 42px;
+  padding-top: 31px;
   display: flex;
   align-items: baseline;
 }
 
 .search-results{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
   text-align: left;
-  margin-left: 72px;
-  margin-top: 29px;
-  margin-right: 46px;
+  margin:0;
+  padding-left: 72px;
+  padding-right: 46px;
 }
 
 .types-chosen a{
@@ -465,7 +474,6 @@ a.active-type{
 
 .hotel-about{
   margin-left: 29px;
-  position: relative;
 }
 
 .hotel-name{
@@ -497,22 +505,21 @@ a.active-type{
   margin-bottom: 15px;
 }
 
-.hotel-description span{
-  position: absolute;
-  left: 119px;
+.columns-hotels{
+  display: flex;
 }
 
 .total-rating{
   display: flex;
   flex-direction: column;
   order: 1;
+  margin:0;
   margin-left: auto;
   margin-right: 72px;
 }
 
 .stars{
   margin-left: auto;
-  margin-top: 29px;
   margin-bottom: 47px;
 }
 
