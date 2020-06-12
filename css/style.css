@@ -425,7 +425,13 @@ img{
 }
 
 .infrastructure{
+  padding:0;
   margin-left: 72px;
+}
+
+.hotel-type{
+  padding:0;
+  margin-left: 119px;
 }
 
 .points-list li, .hotel-type li{
