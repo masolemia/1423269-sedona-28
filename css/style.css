@@ -155,7 +155,7 @@ img{
   line-height: 26px;
   font-weight: 700;
   text-align: center;
-  margin-top: 42px;
+  margin-top: 0;
   margin-right: auto;
   margin-bottom: 16px;
   margin-left: auto;
@@ -391,6 +391,7 @@ img{
   width: 458px;
   height: 58px;
   margin: 0px;
+  border: none;
 }
 
 /*hotels*/
@@ -438,6 +439,7 @@ img{
 }
 
 .price-filter{
+  box-sizing: border-box;
   margin-top: 10px;
   width: 317px;
 }
@@ -466,10 +468,10 @@ img{
 }
 
 .price-controls input{
-  margin-right: 15px;
   width: 33px;
   border: none;
 }
+
 .range-controls{
   position: relative;
   background-color: transparent;
