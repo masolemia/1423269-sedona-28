@@ -12,6 +12,7 @@
   --basic-brown: #604E43;
   --basic-dark-brown:  #503E33;
   --basic-light-grey:#666666;
+  --basic-button-price: #ababab;
 }
 
 html{
@@ -207,9 +208,10 @@ img{
   background-color: var(--basic-white);
   color: var(--basic-light-black);
   text-align: center;
-  padding-top: 82px;
+  padding-top: 160px;
   padding-bottom: 82px;
   width: 400px;
+  height: 330px;
 }
 
 .extras-list h3, .another-reason h3{
@@ -226,6 +228,20 @@ img{
 .extra-item{
   box-sizing: border-box;
   width: 400px;
+  background-repeat: no-repeat;
+  background-position: 50% 64px;
+}
+
+.living{
+  background-image: url(../img/icon-1.svg);
+}
+
+.food{
+  background-image: url(../img/icon-3.svg);
+}
+
+.souvenirs{
+  background-image: url(../img/icon-2.svg);
 }
 
 .total-reason-group.reverse{
@@ -379,6 +395,7 @@ img{
 
 /*hotels*/
 .search-filters{
+  box-sizing: border-box;
   background-color: var(--basic-dark-blue);
   background-image: url("../img/background-hotels.jpg");
   background-size: cover;
@@ -386,6 +403,8 @@ img{
   color: var(--basic-white);
   min-height: 217px;
   padding-top: 27px;
+  padding-bottom: 32px;
+  margin: 0;
 }
 
 .search-filters legend{
@@ -408,8 +427,96 @@ img{
   margin-left: 72px;
 }
 
+.points-list li, .hotel-type li{
+  margin-top: 25px;
+}
+
 .prices{
   margin-left: auto;
+  margin-right: 73px;
+  padding:0;
+}
+
+.price-filter{
+  margin-top: 10px;
+  width: 317px;
+}
+
+.price-controls{
+ border: 2px solid var(--basic-white);
+ border-radius: 2px;
+ width: 317px;
+ padding-top: 7px;
+ padding-bottom: 7px;
+}
+
+.price-min{
+  min-width: 58px;
+  height: 21px;
+  margin-left: 52px;
+  padding-right: 49px;
+  border-right: 2px solid var(--basic-white);
+}
+
+.price-max{
+  min-width: 83px;
+  height: 21px;
+  margin-right: 36px;
+  margin-left: 36px;
+}
+
+.price-controls input{
+  margin-right: 15px;
+  width: 33px;
+  border: none;
+}
+.range-controls{
+  position: relative;
+  background-color: transparent;
+  height: 32px;
+  margin-top: 11px;
+  padding-top: 9px;
+}
+
+.range-controls .scale{
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar{
+  width: 75%;
+  height: 2px;
+  background-color: var(--basic-white);
+}
+
+.range-controls .toggle{
+  width: 4px;
+  height: 4px;
+  padding:0;
+  border: 8px solid var(--basic-white);
+  border-radius: 50%;
+  background-color: var(--basic-button-price);
+  position: absolute;
+  top: 2px;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min{
+  left: 0;
+}
+
+.range-controls .toggle-max{
+  left: 233px;
+}
+
+.show-button{
+  width: 137px;
+  height: 36px;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+  position: relative;
+  left: 50%;
+  margin-left: -69px;
 }
 
 .sort{
@@ -448,6 +555,7 @@ a.active-type{
   margin-left: 32px;
   margin-right: 503px;
 }
+
 .up{
   width: 11px;
   height: 10px;
@@ -521,6 +629,10 @@ a.active-type{
 .stars{
   margin-left: auto;
   margin-bottom: 47px;
+}
+
+span.rating{
+  display: block;
 }
 
 .rating{

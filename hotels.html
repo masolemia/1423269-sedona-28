@@ -13,10 +13,10 @@
       <nav class="menu">
         <a  href="index.html" class="main-logo"> <img src="img/logo.svg" width="138" height="70" alt="Логотип Sedona"> </a>
         <ul class="navigation-list">
-            <li class="navigation-item-left first-navigation-item"><a href="blank.html">Информация</a></li>
-            <li class="navigation-item-left second-navigation-item"><a href="blank.html">Фото и видео</a></li>
-            <li class="navigation-item-right third-navigation-item"><a href="blank.html">Карта штата</a></li>
-            <li class="navigation-item-right last-navigation-item"><a class="actual-page">Гостиницы</a></li>
+            <li class="navigation-item-left"><a href="blank.html">Информация</a></li>
+            <li class="navigation-item-left"><a href="blank.html">Фото и видео</a></li>
+            <li class="navigation-item-right"><a href="blank.html">Карта штата</a></li>
+            <li class="navigation-item-right"><a class="actual-page">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -60,9 +60,19 @@
             </fieldset>
             <fieldset class="prices">
               <legend>Стоимость в сутки (Р):</legend>
-              <label>От<input type="text" name="price_from" id="price_from" value="0"> </label>
-              <label>До<input type="text" name="price_up" id="price_up" value="3000"> </label>
-              <div><button type="button"></button> <button type="button"></button></div>
+              <div class="price-filter">
+                <div class="price-controls">
+                  <label class="price-min">От <input type="text" name="price_from" id="price_from" value="0"> </label>
+                  <label class="price-max">До <input type="text" name="price_up" id="price_up" value="3000"> </label>
+                </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="width: 75%; margin-left:0"></div>
+                  </div>
+                  <button type="button" class="toggle toggle-min" style="left:0"></button>
+                  <button type="button" class="toggle toggle-max" style="left: 233px"></button>
+                </div>
+              </div>
               <button type="submit" class="show-button"> Показать </button>
             </fieldset>
         </form>
