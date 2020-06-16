@@ -13,6 +13,7 @@
   --basic-dark-brown:  #503E33;
   --basic-light-grey:#666666;
   --basic-button-price: #ababab;
+  --basic-logo-active: #bdbbbc;
 }
 
 html{
@@ -48,6 +49,8 @@ img{
   margin: -1px;
   border: 0;
   padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -434,7 +437,34 @@ img{
   margin-left: 119px;
 }
 
+.filter-point label{
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.input-checkbox+label::before{
+  content: " ";
+  position: absolute;
+  left: -40px;
+  top: auto;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/checkbox-off.svg);
+}
+
+.input-checkbox:checked+label::before{
+  content: " ";
+  position: absolute;
+  left: -40px;
+  top: auto;
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/checkbox-on.svg);
+}
+
 .points-list li, .hotel-type li{
+  margin-left: 40px;
   margin-top: 25px;
 }
 
@@ -501,9 +531,9 @@ img{
   width: 4px;
   height: 4px;
   padding:0;
+  background-color: var(--basic-button-price);
   border: 8px solid var(--basic-white);
   border-radius: 50%;
-  background-color: var(--basic-button-price);
   position: absolute;
   top: 2px;
   cursor: pointer;
@@ -533,6 +563,7 @@ img{
   line-height: 18px;
   padding-top: 31px;
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
 }
 
@@ -744,4 +775,12 @@ span.rating{
 
 .logo{
   margin-left: 8px;
+}
+
+.logo:hover path{
+  fill: var(--basic-light-blue);
+}
+
+.logo:active path{
+  fill: var(--basic-logo-active);
 }
