@@ -26,7 +26,7 @@
         <h2 class="visually-hidden">Фильтры поиска гостиниц</h2>
         <form action="https://echo.htmlacademy.ru" method="GET" class="choose-hotel-form">
           <fieldset class="infrastructure">
-              <legend>Инфраструктура</legend>
+              <legend>Инфраструктура:</legend>
               <ul class="points-list">
                 <li class="filter-point">
                   <input type="checkbox" class=" visually-hidden input-checkbox" name="pool" id="pool" checked>
@@ -43,7 +43,7 @@
               </ul>
           </fieldset>
           <fieldset class="hotel-type">
-              <legend>Тип жилья</legend>
+              <legend>Тип жилья:</legend>
               <ul class="points-list">
                 <li class="filter-point">
                   <input type="checkbox" class=" visually-hidden input-checkbox" name="hotel" id="hotel" checked>
@@ -68,10 +68,10 @@
                 </div>
                 <div class="range-controls">
                   <div class="scale">
-                    <div class="bar" style="width: 75%; margin-left:0"></div>
+                    <div class="bar"></div>
                   </div>
-                  <button type="button" class="toggle toggle-min" style="left:0"></button>
-                  <button type="button" class="toggle toggle-max" style="left: 233px"></button>
+                  <button type="button" class="toggle toggle-min"></button>
+                  <button type="button" class="toggle toggle-max"></button>
                 </div>
               </div>
               <button type="submit" class="show-button"> Показать </button>
@@ -80,9 +80,9 @@
       </section>
       <section  class="sort">
         <h2 class="visually-hidden">Сортировка результатов</h2>
-        <p class="search-results">Найдено:3</p>
-        <p>Сортировка:</p>
-          <div class="types-chosen">
+        <p class="search-results">Найдено: 3</p>
+        <p  class="sorting">Сортировка:</p>
+          <div class="types-chosen sorting">
             <a href="#" class="active-type">По цене</a>
             <a href="#">По типу</a>
             <a href="#">По рейтингу</a>
@@ -95,14 +95,14 @@
         <ul  class="hotels-list">
           <li>
             <div class="hotel-about">
-              <h3 class="hotel-name"><a href="#"> Amara Resort&Spa</a></h3>
+              <h3 class="hotel-name"><a href="#">Amara Resort & Spa</a></h3>
               <div class="columns-hotels">
                 <div class="hotel-column">
                   <p class="hotel-description">Гостиница </p>
                   <a href="" class="button button-more" >Подробнее</a>
                 </div>
                 <div class="hotel-column">
-                  <p class="hotel-description">от 4000Р.</p>
+                  <p class="hotel-description">от 4000 Р.</p>
                   <a href="" class="button button-book" >Забронировать</a>
                 </div>
               </div>
@@ -120,14 +120,14 @@
           </li>
           <li>
             <div class="hotel-about">
-              <h3 class="hotel-name"><a href="#"> Desert Quail Inn</a></h3>
+              <h3 class="hotel-name"><a href="#">Desert Quail Inn</a></h3>
               <div class="columns-hotels">
                 <div class="hotel-column">
                   <p class="hotel-description">Мотель </p>
                   <a href="" class="button button-more" >Подробнее</a>
                 </div>
                 <div class="hotel-column">
-                  <p class="hotel-description">от 3000Р.</p>
+                  <p class="hotel-description">от 3000 Р.</p>
                   <a href="" class="button button-book" >Забронировать</a>
                 </div>
               </div>
@@ -144,14 +144,14 @@
           </li>
           <li>
             <div class="hotel-about">
-              <h3 class="hotel-name"> <a href="#">At Poco Diablo</a> </h3>
+              <h3 class="hotel-name"> <a href="#">Villas At Poco Diablo</a> </h3>
               <div class="columns-hotels">
                 <div class="hotel-column">
                   <p class="hotel-description">Апартаменты </p>
                   <a href="" class="button button-more" >Подробнее</a>
                 </div>
                 <div class="hotel-column">
-                  <p class="hotel-description">от 2000Р.</p>
+                  <p class="hotel-description">от 2000 Р.</p>
                   <a href="" class="button button-book" >Забронировать</a>
                 </div>
               </div>
@@ -171,7 +171,7 @@
     <footer class="footer">
       <section>
         <h3>#VISITSEDONA</h3>
-        <a href="tel:+74956660166">тел: +7(495)666-01-66</a>
+        <div  class="phone"><a href="tel:+74956660166">тел: +7(495) 666-01-66</a></div>
       </section>
       <section class="social-web">
         <h3 class="visually-hidden">Contact us</h3>
