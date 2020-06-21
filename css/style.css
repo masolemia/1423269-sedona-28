@@ -324,6 +324,12 @@ img{
   background-color: var(--basic-white);
   padding: 55px;
   height: 395px;
+  display: block;
+  animation: stretching 1s;
+}
+
+.hidden-form{
+  display: none;
 }
 
 .search-form input{
@@ -879,3 +885,16 @@ span.rating{
 .logo:active path{
   fill: var(--basic-logo-active);
 }
+
+/*Animation*/
+
+@keyframes stretching{
+  0% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+

@@ -90,14 +90,14 @@
             <div class="date-form">
               <label class="form form-enter" for="date-enter">Дата заезда:</label>
               <p class="date date-enter">
-                <input type="text" name="date-enter" placeholder="24 апреля 2017" id="date-enter">
+                <input type="text" name="date-enter" placeholder="24 апреля 2017" id="date-enter" required>
                 <button type="button" class="calendar"><img src="img/calendar.svg" alt="календарь"></button>
               </p>
             </div>
             <div class="date-form">
               <label class="form form-leave" for="date-leave">Дата выезда:</label>
               <p class="date date-leave">
-                <input type="text" name="date-leave" placeholder="4 июля 2017" id="date-leave">
+                <input type="text" name="date-leave" placeholder="4 июля 2017" id="date-leave" required>
                 <button type="button" class="calendar"><img src="img/calendar.svg" alt="календарь"></button>
               </p>
             </div>
@@ -106,7 +106,7 @@
                 <label class="form form-adults" for="adults">Взрослые:</label>
                 <div class="guests-number">
                   <button type="button" class="minus"><img src="img/minus.svg" alt="-"></button>
-                  <input type="text" name="adults" placeholder="2" id="adults">
+                  <input type="text" name="adults" placeholder="2" id="adults" required>
                   <button type="button" class="plus"><img src="img/plus.svg" alt="+"></button>
                 </div>
               </div>
@@ -114,7 +114,7 @@
                 <label class="form form-children" for="children">Дети:</label>
                 <div class="guests-number">
                   <button type="button" class="minus"><img src="img/minus.svg" alt="-"></button>
-                  <input type="text" name="children" placeholder="0" id="children">
+                  <input type="text" name="children" placeholder="0" id="children" required>
                   <button type="button" class="plus"><img src="img/plus.svg" alt="+"></button>
                 </div>
               </div>
@@ -149,6 +149,7 @@
       </p>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
