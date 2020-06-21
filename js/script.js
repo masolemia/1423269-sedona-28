@@ -19,6 +19,9 @@ searchButton.addEventListener("click", function (evt){
   form.classList.toggle("search-form");
   form.classList.toggle("hidden-form");
   dateEnter.focus();
+  if(storage){
+    adults.value=storage;
+  }
 });
 
 form.addEventListener("submit", function(evt){
