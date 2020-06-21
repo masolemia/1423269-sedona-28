@@ -332,6 +332,10 @@ img{
   display: none;
 }
 
+.error-form{
+  animation: shake 0.5s;
+}
+
 .search-form input{
   line-height: 26px;
   font-weight: 700;
@@ -898,3 +902,8 @@ span.rating{
   }
 }
 
+@keyframes shake{
+  0%, 100% { transform: translateX(0); }
+  10%, 50%, 90% { transform: translateX(-10px); }
+  30%, 70% { transform: translateX(10px); }
+}
