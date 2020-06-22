@@ -24,7 +24,7 @@ try {
 
 if(form){
   form.classList.add("hidden-form");
-}
+};
 
 searchButton.addEventListener("click", function (evt){
   evt.preventDefault();

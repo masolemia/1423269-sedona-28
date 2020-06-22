@@ -325,11 +325,12 @@ img{
   padding: 55px;
   height: 395px;
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  display: block;
+  animation: stretching 1s;
 }
 
 .shown-form{
   display: block;
-  animation: stretching 1s;
 }
 
 .hidden-form{
@@ -915,13 +916,8 @@ span.rating{
 /*Animation*/
 
 @keyframes stretching{
-  0% {
-    transform: translateY(-100px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
+  0% {transform: translateY(-100px);}
+  100% {transform: translateY(0);}
 }
 
 @keyframes shake{
