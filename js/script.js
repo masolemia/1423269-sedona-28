@@ -1,9 +1,9 @@
 var searchButton = document.querySelector(".button-subtitle");
 var form = document.querySelector(".search-form");
-var dateEnter = document.querySelector("[name=date-enter]");
-var dateLeave = document.querySelector("[name=date-leave]");
-var adults = document.querySelector("[name=adults]");
-var children = document.querySelector("[name=children]");
+var dateEnter = form.querySelector("[name=date-enter]");
+var dateLeave = form.querySelector("[name=date-leave]");
+var adults = form.querySelector("[name=adults]");
+var children = form.querySelector("[name=children]");
 
 var isStorageSupport = true;
 var storage = "";
