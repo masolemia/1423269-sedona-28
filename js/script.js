@@ -22,9 +22,13 @@ try {
   isStorageSupportTwo = false;
 };
 
+if(form){
+  form.classList.add("hidden-form");
+}
+
 searchButton.addEventListener("click", function (evt){
   evt.preventDefault();
-  form.classList.toggle("search-form");
+  form.classList.toggle("shown-form");
   form.classList.toggle("hidden-form");
   form.classList.remove("error-form");
   dateEnter.focus();

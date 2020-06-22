@@ -324,8 +324,11 @@ img{
   background-color: var(--basic-white);
   padding: 55px;
   height: 395px;
-  display: block;
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.shown-form{
+  display: block;
   animation: stretching 1s;
 }
 
