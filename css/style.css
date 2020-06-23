@@ -132,6 +132,7 @@ img{
 }
 
 .main{
+  background-color: var(--basic-blue);
   background-image:
   url("../img/shape-main.png"),
   url("../img/background-main.jpg");
@@ -165,10 +166,12 @@ img{
 
 .blank{
   width: 100%;
-  font-size: 21px;
+  font-size: 30px;
+  color: var(--basic-dark-blue);
   background-color: var(--basic-white);
   margin:0;
-  padding-top: 10px;
+  padding-top: 70px;
+  padding-bottom: 70px;
   text-align: center;
 }
 
@@ -196,6 +199,12 @@ img{
   padding-top: 47px;
 }
 
+.total-reason-group{
+  grid-column: 1/-1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .reason h3{
   margin: 0;
   margin-bottom: 28px;
@@ -206,12 +215,6 @@ img{
 .reason p{
   margin-top: 23px;
   margin-bottom: 54px;
-}
-
-.total-reason-group{
-  grid-column: 1/-1;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .extras-list h3, .another-reason h3{
@@ -401,10 +404,16 @@ img{
 }
 
 .calendar{
-  margin-top: 7px;
-  margin-right: 9px;
-  margin-bottom: 8px;
-  padding: 0;
+  box-sizing: border-box;
+  height: 38px;
+}
+
+.calendar:hover path, .minus:hover rect, .plus:hover path{
+  fill: var(--basic-black);
+}
+
+.calendar:active path, .minus:active rect, .plus:active path{
+  fill: var(--basic-light-blue);
 }
 
 .guests{
@@ -567,7 +576,6 @@ img{
 }
 
 .price-min{
-  display: inline-block;
   min-width: 58px;
   height: 21px;
   margin-left: 65px;
