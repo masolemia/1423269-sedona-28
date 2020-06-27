@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize-min.css">
     <link rel="stylesheet" href="css/style-min.css">
     <title>HTML Academy: Седона</title>
   </head>
@@ -87,8 +87,20 @@
             <a href="#">По типу</a>
             <a href="#">По рейтингу</a>
           </div>
-          <div class="up"><a href="#" title="По возрастанию"></a></div>
-          <div class="down"><a href="#" title="По убыванию"></a></div>
+          <div class="up">
+            <a href="#" aria-label="По возрастанию">
+              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
+              </svg>
+            </a>
+          </div>
+          <div class="down">
+            <a href="#" aria-label="По убыванию">
+              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="active-rating">
+                <path d="M5.5 10L11 0L0 0L5.5 10Z" fill="#CACACA"/>
+              </svg>
+            </a>
+          </div>
       </section>
       <section>
         <h2 class="visually-hidden">Описание гостиниц</h2>
@@ -110,10 +122,12 @@
             <img src="img/amara1.jpg" width="135" height="90" alt="Amara Resort&Spa" class="hotel-photo">
             <div class="total-rating">
               <div class="stars">
-                <img src="img/star.svg" width="19" height="17" alt="4 звезды">
-                <img src="img/star.svg" width="19" height="17" alt="">
-                <img src="img/star.svg" width="19" height="17" alt="">
-                <img src="img/star.svg" width="19" height="17" alt="">
+                <svg width="91" height="17" viewBox="0 0 91 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                  <path d="M33.002 0L35.128 6.494H42.005L36.441 10.506L38.566 17L33.002 12.987L27.438 17L29.564 10.506L24 6.494H30.878L33.002 0Z" fill="#81B3D2"/>
+                  <path d="M58.002 0L60.128 6.494H67.005L61.441 10.506L63.566 17L58.002 12.987L52.438 17L54.564 10.506L49 6.494H55.878L58.002 0Z" fill="#81B3D2"/>
+                  <path d="M81.002 0L83.128 6.494H90.005L84.441 10.506L86.566 17L81.002 12.987L75.438 17L77.564 10.506L72 6.494H78.878L81.002 0Z" fill="#81B3D2"/>
+                </svg>
               </div>
               <span class="rating">Рейтинг: 8,5</span>
            </div>
@@ -135,9 +149,11 @@
             <img src="img/desert2.jpg" width="135" height="90" alt="Desert Quail Inn" class="hotel-photo">
             <div class="total-rating">
               <div class="stars">
-                <img src="img/star.svg" width="19" height="17" alt="3 звезды">
-                <img src="img/star.svg" width="19" height="17" alt="">
-                <img src="img/star.svg" width="19" height="17" alt="">
+                <svg width="66" height="17" viewBox="0 0 66 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                  <path d="M33.002 0L35.128 6.494H42.005L36.441 10.506L38.566 17L33.002 12.987L27.438 17L29.564 10.506L24 6.494H30.878L33.002 0Z" fill="#81B3D2"/>
+                  <path d="M56.002 0L58.128 6.494H65.005L59.441 10.506L61.566 17L56.002 12.987L50.438 17L52.564 10.506L47 6.494H53.878L56.002 0Z" fill="#81B3D2"/>
+                </svg>
               </div>
               <span class="rating">Рейтинг: 8,9</span>
             </div>
@@ -159,8 +175,10 @@
             <img src="img/villas3.jpg" width="135" height="90" alt="Villas At Poco Diablo" class="hotel-photo">
             <div class="total-rating">
               <div class="stars">
-                <img src="img/star.svg" width="19" height="17" alt="2 звезды">
-                <img src="img/star.svg" width="19" height="17" alt="">
+                <svg width="42" height="17" viewBox="0 0 42 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                  <path d="M32.002 0L34.128 6.494H41.005L35.441 10.506L37.566 17L32.002 12.987L26.438 17L28.564 10.506L23 6.494H29.878L32.002 0Z" fill="#81B3D2"/>
+                </svg>
               </div>
               <span class="rating">Рейтинг: 9,2</span>
             </div>

@@ -15,6 +15,7 @@
   --basic-button-price: #ababab;
   --basic-logo-active: #bdbbbc;
   --basic-border-color:#e5e5e5;
+  --basic-input-form: #ebebeb;
 }
 
 html{
@@ -206,15 +207,21 @@ img{
 }
 
 .reason h3{
+  width: 151px;
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 28px;
   font-size: 21px;
   font-weight: 700;
 }
 
 .reason p{
+  width: 306px;
   margin-top: 23px;
+  margin-right: auto;
   margin-bottom: 54px;
+  margin-left: auto;
 }
 
 .extras-list h3, .another-reason h3{
@@ -241,7 +248,10 @@ img{
 }
 
 .extras-list p{
+  width: 297px;
   margin-top: 25px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .extra-item{
@@ -276,13 +286,23 @@ img{
 }
 
 .another-reason h3{
+  width: 119px;
   margin-top: 47px;
+  margin-right: auto;
   margin-bottom: 25px;
+  margin-left: auto;
 }
 
 .another-reason p{
+  width: 261px;
   margin-top: 23px;
+  margin-right: auto;
   margin-bottom: 54px;
+  margin-left: auto;
+}
+
+.another-reason:last-child p{
+  width: 247px;
 }
 
 .interested-form{
@@ -350,6 +370,15 @@ img{
   color: var(--basic-black);
   text-transform: uppercase;
   padding: 0;
+}
+
+.search-form input:hover{
+  background-color: var(--basic-input-form);
+}
+
+.search-form input:focus{
+  background-color: var(--basic-white);
+  border: 2px solid var(--basic-border-color);
 }
 
 .date-form, .guests-number-form{
@@ -422,11 +451,18 @@ img{
 
 .form-adults{
   min-width: 101px;
+  margin-right: 10px;
 }
 
 .form-children{
   min-width: 57px;
   margin-left: 53px;
+  margin-right: 9px;
+}
+
+.guests-number-form label{
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .guests-number{
@@ -436,13 +472,12 @@ img{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-left: 11px;
   background-color: var(--basic-dark-white);
 }
 
 .guests-number input{
   box-sizing: border-box;
-  width: 36px;
+  width: 38px;
   height: 38px;
   background-color: inherit;
   text-align: center;
@@ -451,7 +486,14 @@ img{
 
 .minus, .plus{
   box-sizing: border-box;
+  width: 38px;
   height: 38px;
+  padding: 0;
+}
+
+.minus svg{
+  margin-top: 17px;
+  margin-bottom: 17px;
 }
 
 .button-search{
@@ -461,7 +503,7 @@ img{
   width: 458px;
   height: 58px;
   margin: 0px;
-  margin-top: 25px;
+  margin-top: 54px;
   border: none;
 }
 
@@ -539,6 +581,20 @@ img{
   background-image: url("../img/checkbox-off.svg");
 }
 
+.input-checkbox:focus+label::before{
+  border: 2px solid var(--basic-black);
+}
+
+.input-checkbox:disabled+label::before{
+  content: " ";
+  position: absolute;
+  left: -40px;
+  top: auto;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off-disabled.svg");
+}
+
 .input-checkbox:checked+label::before{
   content: " ";
   position: absolute;
@@ -547,6 +603,16 @@ img{
   width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-on.svg");
+}
+
+.input-checkbox:checked:disabled+label::before{
+  content: " ";
+  position: absolute;
+  left: -40px;
+  top: auto;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-on-disabled.svg");
 }
 
 .points-list li, .hotel-type li{
@@ -629,6 +695,10 @@ img{
   cursor: pointer;
 }
 
+.range-controls .toggle:hover, .range-controls .toggle:active{
+  border: 9px solid var(--basic-white);
+}
+
 .range-controls .toggle-min{
   left: 0;
 }
@@ -677,7 +747,16 @@ img{
 .types-chosen a{
   background-color: transparent;
   color: rgba(0, 0,0,0.3);
-  border-bottom:  1px dashed #81B3D2;
+  border-bottom:  1px dashed var(--basic-light-blue);
+}
+
+.types-chosen a:hover{
+  color: var(--basic-light-blue);
+}
+
+.types-chosen a:active{
+  color: var(--basic-black);
+  border-bottom: none;
 }
 
 a.active-type{
@@ -699,16 +778,24 @@ a.active-type{
 .up{
   width: 11px;
   height: 10px;
-  background-image: url("../img/icon-up-dir.svg");
-  background-repeat: no-repeat;
   margin-right: 12px;
 }
 
 .down{
   width: 11px;
   height: 10px;
-  background-image: url("../img/icon-down-dir.svg");
-  background-repeat: no-repeat;
+}
+
+.active-rating path{
+  fill: var(--basic-light-blue);
+}
+
+.up:hover path, .down:hover path{
+  fill: var(--basic-black);
+}
+
+.up:active path, .down:active path{
+  fill: var(--basic-light-blue);
 }
 
 .hotels-list{
